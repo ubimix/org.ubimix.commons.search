@@ -10,6 +10,10 @@ Bundle-License: http://www.apache.org/licenses/LICENSE-2.0
 Import-Package: org.apache.lucene.analysis;version="[3.0.0,4.0.0)",
  org.apache.lucene.document;version="[3.0.0,4.0.0)",
  org.apache.lucene.index;version="[3.0.0,4.0.0)",
- org.apache.lucene.store;version="[3.0.0,4.0.0)"
+ org.apache.lucene.queryParser;version="[3.0.0,4.0.0)",
+ org.apache.lucene.search;version="[3.0.0,4.0.0)",
+ org.apache.lucene.search.highlight;version="[3.0.0,4.0.0)",
+ org.apache.lucene.store;version="[3.0.0,4.0.0)",
+ org.apache.lucene.util;version="[3.0.0,4.0.0)"
 Export-Package: org.webreformatter.search,
  org.webreformatter.search.lucene
