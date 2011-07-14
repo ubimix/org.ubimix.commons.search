@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ClassPath: .
+Bundle-SymbolicName: org.webreformatter.search;singleton:=true
+Bundle-Name: org.webreformatter.search
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Version: 0.1.0.SNAPSHOT
+Bundle-ManifestVersion: 2
+Bundle-Description: CoginumSystems Application
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0
+Import-Package: org.apache.lucene.analysis;version="[3.0.0,4.0.0)",
+ org.apache.lucene.document;version="[3.0.0,4.0.0)",
+ org.apache.lucene.index;version="[3.0.0,4.0.0)",
+ org.apache.lucene.store;version="[3.0.0,4.0.0)"
+Export-Package: org.webreformatter.search,
+ org.webreformatter.search.lucene
