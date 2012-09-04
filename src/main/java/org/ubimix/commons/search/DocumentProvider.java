@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.webreformatter.search;
+package org.ubimix.commons.search;
 
 import java.util.Arrays;
 import java.util.Iterator;
@@ -25,7 +25,7 @@ public class DocumentProvider implements IDocumentProvider {
     }
 
     /**
-     * @see org.webreformatter.search.IDocumentProvider#closeIterator(java.util.Iterator)
+     * @see org.ubimix.commons.search.IDocumentProvider#closeIterator(java.util.Iterator)
      */
     public void closeIterator(Iterator<IDocument> iterator) {
     }

@@ -3,13 +3,20 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <relativePath>../org.webreformatter.sync.libs</relativePath>
-        <groupId>org.webreformatter.sync</groupId>
-        <artifactId>org.webreformatter.sync.libs</artifactId>
-        <version>1.2.0</version>
+        <groupId>org.ubimix.poms</groupId>
+        <artifactId>org.ubimix.poms.bundle</artifactId>
+        <version>1.2.1</version>
     </parent>
-    <groupId>org.webreformatter.sync</groupId>
-    <artifactId>org.webreformatter.search</artifactId>
+    <groupId>org.ubimix.commons</groupId>
+    <artifactId>org.ubimix.commons.search</artifactId>
     <name>${project.artifactId}</name>
     <packaging>bundle</packaging>
+    <version>1.2.1</version>
+    <dependencies>
+        <dependency>
+            <groupId>org.ubimix.libs</groupId>
+            <artifactId>org.ubimix.libs.lucene</artifactId>
+            <version>3.3.0</version>
+        </dependency>
+    </dependencies>
 </project>

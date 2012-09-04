@@ -1,4 +1,4 @@
-package org.webreformatter.search.lucene;
+package org.ubimix.commons.search.lucene;
 
 import java.util.Collections;
 import java.util.HashMap;
@@ -22,12 +22,12 @@ import org.apache.lucene.search.Query;
 import org.apache.lucene.search.TermQuery;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.util.Version;
-import org.webreformatter.search.DocumentProvider;
-import org.webreformatter.search.IDocument;
-import org.webreformatter.search.IDocumentIndexer;
-import org.webreformatter.search.IDocumentProvider;
-import org.webreformatter.search.IFieldConst;
-import org.webreformatter.search.SearchException;
+import org.ubimix.commons.search.DocumentProvider;
+import org.ubimix.commons.search.IDocument;
+import org.ubimix.commons.search.IDocumentIndexer;
+import org.ubimix.commons.search.IDocumentProvider;
+import org.ubimix.commons.search.IFieldConst;
+import org.ubimix.commons.search.SearchException;
 
 /**
  * This class is used to index objects of the {@link IDocument} type. Indexing
@@ -70,7 +70,7 @@ public class DocumentIndexer implements IDocumentIndexer {
     }
 
     /**
-     * @see org.webreformatter.search.IDocumentIndexer#close()
+     * @see org.ubimix.commons.search.IDocumentIndexer#close()
      */
     public void close() throws SearchException {
         try {
@@ -92,7 +92,7 @@ public class DocumentIndexer implements IDocumentIndexer {
     }
 
     /**
-     * @see org.webreformatter.search.IDocumentIndexer#index(org.webreformatter.search.IDocument)
+     * @see org.ubimix.commons.search.IDocumentIndexer#index(org.ubimix.commons.search.IDocument)
      */
     public void index(IDocument doc) throws SearchException {
         index(null, doc);
@@ -103,8 +103,8 @@ public class DocumentIndexer implements IDocumentIndexer {
     }
 
     /**
-     * @see org.webreformatter.search.IDocumentIndexer#index(java.util.Map,
-     *      org.webreformatter.search.IDocument)
+     * @see org.ubimix.commons.search.IDocumentIndexer#index(java.util.Map,
+     *      org.ubimix.commons.search.IDocument)
      */
     public void index(
         Map<String, FieldDescription> fieldDescriptors,

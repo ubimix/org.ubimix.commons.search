@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.webreformatter.search;
+package org.ubimix.commons.search;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -12,7 +12,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.webreformatter.search.IDocumentSearcher.ISearchResult;
+import org.ubimix.commons.search.IDocumentSearcher.ISearchResult;
 
 public abstract class AbstractSearchResultGroups {
 

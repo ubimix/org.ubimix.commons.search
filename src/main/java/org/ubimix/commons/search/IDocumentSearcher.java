@@ -1,4 +1,4 @@
-package org.webreformatter.search;
+package org.ubimix.commons.search;
 
 import java.util.Collection;
 

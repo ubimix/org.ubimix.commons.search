@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.webreformatter.search.lucene;
+package org.ubimix.commons.search.lucene;
 
 import java.io.IOException;
 import java.io.StringReader;
@@ -31,11 +31,11 @@ import org.apache.lucene.search.highlight.QueryScorer;
 import org.apache.lucene.search.highlight.SimpleHTMLFormatter;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.util.Version;
-import org.webreformatter.search.AbstractDocument;
-import org.webreformatter.search.IDocument;
-import org.webreformatter.search.IDocumentSearcher;
-import org.webreformatter.search.IFieldConst;
-import org.webreformatter.search.SearchException;
+import org.ubimix.commons.search.AbstractDocument;
+import org.ubimix.commons.search.IDocument;
+import org.ubimix.commons.search.IDocumentSearcher;
+import org.ubimix.commons.search.IFieldConst;
+import org.ubimix.commons.search.SearchException;
 
 /**
  * @author kotelnikov
@@ -152,7 +152,7 @@ public class DocumentSearcher implements IDocumentSearcher {
     }
 
     /**
-     * @see org.webreformatter.search.IDocumentSearcher#close()
+     * @see org.ubimix.commons.search.IDocumentSearcher#close()
      */
     public void close() throws SearchException {
         try {
@@ -197,9 +197,9 @@ public class DocumentSearcher implements IDocumentSearcher {
     }
 
     /**
-     * @see org.webreformatter.search.IDocumentSearcher#search(java.lang.String,
+     * @see org.ubimix.commons.search.IDocumentSearcher#search(java.lang.String,
      *      java.util.Collection,
-     *      org.webreformatter.search.DocumentSearcher.ISearchResultCollector)
+     *      org.ubimix.commons.search.DocumentSearcher.ISearchResultCollector)
      */
     public void search(
         String q,
@@ -239,9 +239,9 @@ public class DocumentSearcher implements IDocumentSearcher {
     }
 
     /**
-     * @see org.webreformatter.search.IDocumentSearcher#search(java.lang.String,
+     * @see org.ubimix.commons.search.IDocumentSearcher#search(java.lang.String,
      *      java.util.Collection,
-     *      org.webreformatter.search.DocumentSearcher.ISearchResultCollector)
+     *      org.ubimix.commons.search.DocumentSearcher.ISearchResultCollector)
      */
     public void search(String q, final ISearchResultCollector collector)
         throws SearchException {

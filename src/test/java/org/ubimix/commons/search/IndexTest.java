@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.webreformatter.search.lucene;
+package org.ubimix.commons.search;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -13,14 +13,16 @@ import org.apache.lucene.analysis.SimpleAnalyzer;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.RAMDirectory;
 import org.apache.lucene.util.Version;
-import org.webreformatter.search.IDocument;
-import org.webreformatter.search.IDocumentIndexer;
-import org.webreformatter.search.IDocumentIndexer.FieldDescription;
-import org.webreformatter.search.IDocumentSearcher;
-import org.webreformatter.search.IDocumentSearcher.ISearchResult;
-import org.webreformatter.search.IDocumentSearcher.ISearchResultCollector;
-import org.webreformatter.search.MapBasedDocument;
-import org.webreformatter.search.SearchException;
+import org.ubimix.commons.search.IDocument;
+import org.ubimix.commons.search.IDocumentIndexer;
+import org.ubimix.commons.search.IDocumentSearcher;
+import org.ubimix.commons.search.MapBasedDocument;
+import org.ubimix.commons.search.SearchException;
+import org.ubimix.commons.search.IDocumentIndexer.FieldDescription;
+import org.ubimix.commons.search.IDocumentSearcher.ISearchResult;
+import org.ubimix.commons.search.IDocumentSearcher.ISearchResultCollector;
+import org.ubimix.commons.search.lucene.DocumentIndexer;
+import org.ubimix.commons.search.lucene.DocumentSearcher;
 
 /**
  * @author kotelnikov
